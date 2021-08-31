@@ -1,0 +1,52 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+}
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+  
+
+}
+.titulo {
+    font-size: 2rem;
+}
+.contenedor{ /*centrar todo el contenido*/
+    width: 120rem;
+    /*margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;*/
+    /*margin: 0 auto 0 auto;*/
+    margin: 0 auto;
+}
+.nav-bg{/*utility first*/
+    background-color: var(--secundario);
+}
+.navegacionPrincipal{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.navegacionPrincipal a { /*modulos*/
+    padding: 1rem; /* es como un margin pero agrega el color*/
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.navegacionPrincipal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
