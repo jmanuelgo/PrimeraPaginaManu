@@ -34,11 +34,19 @@ body{
     background-color: var(--secundario);
 }
 .navegacionPrincipal{
-    
+    flex-direction: column;
     display: flex;
-    justify-content: space-between;
+    
+}
+@media(min-width: 768px){
+    .navegacionPrincipal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 .navegacionPrincipal a { /*modulos*/
+    display: block;
+    text-align: center;
     padding: 1rem; /* es como un margin pero agrega el color*/
     color: var(--blanco);
     text-decoration: none;
@@ -49,4 +57,10 @@ body{
 .navegacionPrincipal a:hover{
     background-color: var(--primario);
     color: var(--oscuro);
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
